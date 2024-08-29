@@ -1,0 +1,476 @@
+Index: Java-assignment/assignment/.idea/modules.xml
+===================================================================
+diff --git a/Java-assignment/assignment/.idea/modules.xml b/Java-assignment/assignment/.idea/modules.xml
+deleted file mode 100644
+--- a/Java-assignment/assignment/.idea/modules.xml	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/variable1.iml" filepath="$PROJECT_DIR$/variable1.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: Java-assignment/assignment/.idea/.gitignore
+===================================================================
+diff --git a/Java-assignment/assignment/.idea/.gitignore b/Java-assignment/assignment/.idea/.gitignore
+deleted file mode 100644
+--- a/Java-assignment/assignment/.idea/.gitignore	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: Java-assignment/assignment/src/slide37.java
+===================================================================
+diff --git a/Java-assignment/assignment/src/slide37.java b/Java-assignment/assignment/src/slide37.java
+deleted file mode 100644
+--- a/Java-assignment/assignment/src/slide37.java	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,31 +0,0 @@
+-import java.util.Random;
+-import java.util.Scanner;
+-
+-public class slide37 {
+-    public static void main(String[] args) {
+-        Random rand = new Random();
+-        Scanner scanner = new Scanner(System.in);
+-        int error = 0;
+-        int score = 0;
+-        do {
+-            int num = rand.nextInt(4) + 2;
+-            int r = rand.nextInt(10)+1;
+-            int sum = r;
+-            System.out.print(r);
+-            for (int i =1;i<num;i++){
+-                r  = rand.nextInt(10)+1;
+-                sum+= r;
+-                System.out.print(" + "+r);
+-            }
+-            System.out.print(" = ");
+-            int ans = scanner.nextInt();
+-            if (ans == sum ){
+-                ++score;
+-            }else{
+-                System.out.println("Wrong answer was "+sum);
+-                ++error;
+-            }
+-        }while (error <3);
+-        System.out.println("You earned "+ score +" in total points.");
+-    }
+-}
+Index: Java-assignment/assignment/src/for_loop.java
+===================================================================
+diff --git a/Java-assignment/assignment/src/for_loop.java b/Java-assignment/assignment/src/for_loop.java
+deleted file mode 100644
+--- a/Java-assignment/assignment/src/for_loop.java	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,9 +0,0 @@
+-import java.util.Scanner;
+-
+-public class for_loop {
+-    public static void main(String[] args) {
+-        for (int i = 1;i<=6;i++){
+-            System.out.println(i+" squared = "+i*i);
+-        }
+-    }
+-}
+Index: Java-assignment/assignment/.idea/vcs.xml
+===================================================================
+diff --git a/Java-assignment/assignment/.idea/vcs.xml b/Java-assignment/assignment/.idea/vcs.xml
+deleted file mode 100644
+--- a/Java-assignment/assignment/.idea/vcs.xml	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-    <mapping directory="$PROJECT_DIR$/Java-assignment-3" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: Java-assignment/assignment/src/while_loop.java
+===================================================================
+diff --git a/Java-assignment/assignment/src/while_loop.java b/Java-assignment/assignment/src/while_loop.java
+deleted file mode 100644
+--- a/Java-assignment/assignment/src/while_loop.java	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,15 +0,0 @@
+-import java.util.Scanner;
+-
+-public class while_loop{
+-    public static void main(String[] args) {
+-        int sum = 0;
+-        int num = 0;
+-        Scanner scanner = new Scanner(System.in);
+-        while(num != -1){
+-            sum+=num;
+-            System.out.println("Enter a number (-1 to quit): ");
+-            num = scanner.nextInt();
+-        }
+-        System.out.println("Sum = "+sum);
+-    }
+-}
+Index: Java-assignment/assignment/.idea/misc.xml
+===================================================================
+diff --git a/Java-assignment/assignment/.idea/misc.xml b/Java-assignment/assignment/.idea/misc.xml
+deleted file mode 100644
+--- a/Java-assignment/assignment/.idea/misc.xml	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: Java-assignment/assignment/src/switch_case.java
+===================================================================
+diff --git a/Java-assignment/assignment/src/switch_case.java b/Java-assignment/assignment/src/switch_case.java
+deleted file mode 100644
+--- a/Java-assignment/assignment/src/switch_case.java	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,24 +0,0 @@
+-import java.util.Scanner;
+-
+-public class switch_case {
+-    public static void main(String[] args) {
+-        Scanner scanner = new Scanner(System.in);
+-        System.out.print("Enter n: ");
+-        int n = scanner.nextInt();
+-        switch(n){
+-            case 5:
+-                System.out.println("Five");
+-            case 4:
+-                System.out.println("Four");
+-            case 3 :
+-                System.out.println("Three");
+-            case 2:
+-                System.out.println("Two");
+-            case 1:
+-                System.out.println("One");
+-            default:
+-                System.out.println("N/A");
+-        }
+-
+-    }
+-}
+Index: Java-assignment/assignment/src/randnum.java
+===================================================================
+diff --git a/Java-assignment/assignment/src/randnum.java b/Java-assignment/assignment/src/randnum.java
+deleted file mode 100644
+--- a/Java-assignment/assignment/src/randnum.java	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,10 +0,0 @@
+-import java.util.Random;
+-import java.util.Scanner;
+-public class randnum {
+-    public static void main(String[] args) {
+-        Random rand = new Random();
+-        int n = rand.nextInt(100)+1;
+-        System.out.println("The lucky number is: "+n);
+-    }
+-}
+-
+Index: Java-assignment/assignment/.idea/uiDesigner.xml
+===================================================================
+diff --git a/Java-assignment/assignment/.idea/uiDesigner.xml b/Java-assignment/assignment/.idea/uiDesigner.xml
+deleted file mode 100644
+--- a/Java-assignment/assignment/.idea/uiDesigner.xml	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
++++ /dev/null	(revision b2ce6d7ee4a207e6174c98f422fcd4b324a087a7)
+@@ -1,124 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Palette2">
+-    <group name="Swing">
+-      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+-      </item>
+-      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+-      </item>
+-      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
+-        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+-        <initial-values>
+-          <property name="text" value="Button" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="RadioButton" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="CheckBox" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="Label" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+-          <preferred-size width="200" height="200" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+-          <preferred-size width="200" height="200" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+-      </item>
+-      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+-          <preferred-size width="-1" height="20" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+-      </item>
+-      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+-      </item>
+-    </group>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: Java-assignment/assignment5/src/avarage_weather.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java-assignment/assignment5/src/avarage_weather.java b/Java-assignment/assignment5/src/avarage_weather.java
+new file mode 100644
+--- /dev/null	(date 1724809600298)
++++ b/Java-assignment/assignment5/src/avarage_weather.java	(date 1724809600298)
+@@ -0,0 +1,24 @@
++import java.util.Scanner;
++
++public class avarage_weather {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.print("How many days' temperatures: ");
++        int days = scanner.nextInt();
++        double []temps = new double[days];
++        int sum =0;
++        for (int i=0;i<days;i++){
++            System.out.print("Day "+(i+1) +"'s temperature: ");
++            temps[i] = scanner.nextInt();
++            sum+=temps[i];
++        }
++        double aver = (double)sum/days;
++        int cnt = 0;
++        for (int i=0;i<days;i++){
++            if(temps[i]>aver) cnt++;
++        }
++        System.out.println("Avarage temps: "+aver);
++        System.out.println(cnt+" days above average");
++
++    }
++}
+Index: Java-assignment/assignment5/src/array_loop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java-assignment/assignment5/src/array_loop.java b/Java-assignment/assignment5/src/array_loop.java
+new file mode 100644
+--- /dev/null	(date 1724898984974)
++++ b/Java-assignment/assignment5/src/array_loop.java	(date 1724898984974)
+@@ -0,0 +1,8 @@
++import java.util.Arrays;
++public class array_loop {
++    public static void main(String[] args) {
++        int[] e = {0,2,4,6,8};
++        e[1]=e[3]+e[4];
++        System.out.println("e is "+ Arrays.toString(e));
++    }
++}
+Index: Java-assignment/assignment5/src/arr_loop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java-assignment/assignment5/src/arr_loop.java b/Java-assignment/assignment5/src/arr_loop.java
+new file mode 100644
+--- /dev/null	(date 1724898984971)
++++ b/Java-assignment/assignment5/src/arr_loop.java	(date 1724898984971)
+@@ -0,0 +1,15 @@
++import java.util.Arrays;
++
++public class arr_loop {
++    public static void main(String[] args) {
++        int[] arr = new int[8];
++        for (int i = 0; i < arr.length; i++) {
++            arr[i] = 2 * i;
++        }
++
++//        for (int i = 0; i < arr.length; i++) {
++//            System.out.print(arr[i] + " ");
++//        }
++        System.out.println(Arrays.toString(arr));
++    }
++}
+\ No newline at end of file
+Index: Java-assignment/assignment5/src/Accessing_element.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java-assignment/assignment5/src/Accessing_element.java b/Java-assignment/assignment5/src/Accessing_element.java
+new file mode 100644
+--- /dev/null	(date 1724898739021)
++++ b/Java-assignment/assignment5/src/Accessing_element.java	(date 1724898739021)
+@@ -0,0 +1,11 @@
++public class Accessing_element {
++    public static void main(String[] args) {
++        int [] numbers = new int[10];
++        numbers[0]= 27;
++        numbers[3]=-6;
++        System.out.println(numbers[0]);
++        if (numbers[3]<0){
++            System.out.println("Element 3 is negative");
++        }
++    }
++}
+Index: Java-assignment/assignment5/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java-assignment/assignment5/.idea/misc.xml b/Java-assignment/assignment5/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1724805246540)
++++ b/Java-assignment/assignment5/.idea/misc.xml	(date 1724805246540)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: Java-assignment/assignment5/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java-assignment/assignment5/.idea/vcs.xml b/Java-assignment/assignment5/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1724899342776)
++++ b/Java-assignment/assignment5/.idea/vcs.xml	(date 1724899342776)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/Java-assignment" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: Java-assignment/assignment5/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java-assignment/assignment5/.idea/modules.xml b/Java-assignment/assignment5/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1724805246525)
++++ b/Java-assignment/assignment5/.idea/modules.xml	(date 1724805246525)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/untitled1.iml" filepath="$PROJECT_DIR$/untitled1.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: Java-assignment/assignment5/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Java-assignment/assignment5/.idea/.gitignore b/Java-assignment/assignment5/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1724805246591)
++++ b/Java-assignment/assignment5/.idea/.gitignore	(date 1724805246591)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
