@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb58a086-9ffd-46ff-b2b4-4065fcfe28a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assignment 7/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment 7/.idea/java_ws.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment 7/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment 7/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment 7/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assignment 7/src/array.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-assignment" beforeDir="false" afterPath="$PROJECT_DIR$/Java-assignment" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-assignment/assignment/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-assignment/assignment/.idea/misc.xml" beforeDir="false" />
@@ -22,8 +17,6 @@
       <change beforePath="$PROJECT_DIR$/Java-assignment/assignment/src/slide37.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-assignment/assignment/src/switch_case.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-assignment/assignment/src/while_loop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment 5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/assignment 5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Accessing_element.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +54,10 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/java_ws/Assignment 5/assignment 7&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/java_ws/exam_1/src/check_num.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -73,6 +69,27 @@
       <recent name="D:\java_ws\Assignment 5\assignment 7\src" />
       <recent name="D:\java_ws\Assignment 5" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="array" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Assignment 5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Assignment 5" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
